@@ -6,4 +6,4 @@ try {
   console.log(e)
 }
 
-throw new Error('bar')
+JSON.parse(invalidJson)
