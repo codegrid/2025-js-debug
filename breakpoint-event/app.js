@@ -1,7 +1,6 @@
-const btn = document.querySelector('button')
+const output = document.getElementById('output')
 
-const onClick = function () {
-  console.log('clicked!')
-}
-
-btn.addEventListener('click', onClick)
+document.addEventListener('keydown', function (event) {
+  output.textContent = `押されたキー: ${event.key}`
+  console.log(`キー: ${event.key}, コード: ${event.code}`)
+})
